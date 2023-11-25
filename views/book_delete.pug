@@ -1,0 +1,14 @@
+extends layout
+
+
+block content
+  h1 #{title}: #{livre.title}
+  p= livre.summary
+
+    p Do you really want to delete this book?
+
+    form(method='POST' action='')
+      div.form-group
+        input#livreid.form-control(type='hidden',name='livreid', required='true', value=livre.id)
+
+      button.btn.btn-primary(type='submit') Delete
