@@ -12,9 +12,7 @@ const compression = require("compression");
 
 var app = express();
 //initialise la connection avec la base de donnée
-const mongoose= require("mongoose");
-mongoose.set("strictQuery",false);
-// Set up mongoose connection
+
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
